@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Global Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--FontAwesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>PORTFOLIO WEBSITE</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <img src="logo.jpg" alt="Shreya" class="logo">
+            <ul class="main-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>Welcome to my Portfolio Website</h1>
+            <p>Here you can find information about my skills, experience, and projects.</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="gallery">Recent Projects Screenshot</h2>
+            <div class="project-card">
+                <img src="Project 1.png" alt="Project 1">
+                <h3 class="project-title">Project 1</h3>
+                <p>This is a Color Flipper projet, we can flip the background colors or change according to our choice. There are two choices that we want simple background color or we want a Hex code background color. </p>
+                <a href="#">Check it out<i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="project-card">
+                <img src="Project 2.png" alt="Project 2">
+                <h3 class="project-title">Project 2</h3>
+                <p>This is a Counter project, in which we can increase the number or decrease the number and when we want it to reset it we can do it by using the buttons. This can increase, decrease and reset the numbers as the choice of user. </p>
+                <a href="#">Check it out<i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="project-card">
+                <img src="Project 3.png" alt="Project 3">
+                <h3 class="project-title">Project 3</h3>
+                <p>This is a normal Health Panel project , in which we can see the CSS grid and the two images we have used in this.In this can see heart rate, sleep, miles many more things. This project is basically based on CSS grid.</p>
+                <a href="#">Check it out<i class="fas fa-chevron-right"></i></a>
+            </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="resume">
+            <h3>Education</h3>
+            <ul>
+                <li class="center">Bachelor of Science in Computer Science and Engineering - Goel Institute Of Technology & Management , Lucknow</li>
+            </ul>
+            <h3>Experience</h3>
+            <ul>
+                <li class="center">Freshers - Student(3rd Year)</li>
+            </ul>
+            <h3>Skills</h3>
+            <ul class="skills">
+                <li class="circle">HTML</li>
+                <li class="circle">CSS</li>
+                <li class="circle">Javascript</li>
+                <li class="circle">Python</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" class="form" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+               <label for="message">Message:</label>
+               <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <input  class="btn" type="submit" value="Send">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy;2023 Portfolio Website. All rights reserved</p>
+    </footer>
+
+    <!-- Javascript link -->
+    <script src="main.js"></script>
+</body>
+</html>
