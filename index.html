@@ -4,107 +4,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Style link -->
+    <!-- StyleSheet -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Global Fonts Links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <!--FontAwesome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <title>WhatsApp Web Clone</title>
 
-    <title>PORTFOLIO WEBSITE</title>
 </head>
 <body>
-    <header>
-        <nav class="main-nav">
-            <img src="logo.jpg" alt="Shreya" class="logo">
-            <ul class="main-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <div class="intro">
-            <h1>Welcome to my Portfolio Website</h1>
-            <p>Here you can find information about my skills, experience, and projects.</p>
-            <a href="#projects" class="btn">View Projects</a>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 class="gallery">Recent Projects Screenshot</h2>
-            <div class="project-card">
-                <img src="Project 1.png" alt="Project 1">
-                <h3 class="project-title">Project 1</h3>
-                <p>This is a Color Flipper projet, we can flip the background colors or change according to our choice. There are two choices that we want simple background color or we want a Hex code background color. </p>
-                <a href="#">Check it out<i class="fas fa-chevron-right"></i></a>
+    <div class="container">
+        <div class="leftSide">
+            <div class="header">
+                <div class="userimage">
+                    <img src="Images/user.jpg" alt="" class="cover">
+                </div>
+                <ul class="nav_icons">
+                    <li><i class="fa-solid fa-users"></i></li>
+                    <li><i class="fa-solid fa-spinner"></i></li>
+                    <li><i class="fa-solid fa-square-plus"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
             </div>
-            <div class="project-card">
-                <img src="Project 2.png" alt="Project 2">
-                <h3 class="project-title">Project 2</h3>
-                <p>This is a Counter project, in which we can increase the number or decrease the number and when we want it to reset it we can do it by using the buttons. This can increase, decrease and reset the numbers as the choice of user. </p>
-                <a href="#">Check it out<i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="project-card">
-                <img src="Project 3.png" alt="Project 3">
-                <h3 class="project-title">Project 3</h3>
-                <p>This is a normal Health Panel project , in which we can see the CSS grid and the two images we have used in this.In this can see heart rate, sleep, miles many more things. This project is basically based on CSS grid.</p>
-                <a href="#">Check it out<i class="fas fa-chevron-right"></i></a>
-            </div>
-    </section>
-
-    <section id="resume">
-        <h2>Resume</h2>
-        <div class="resume">
-            <h3>Education</h3>
-            <ul>
-                <li class="center">Bachelor of Science in Computer Science and Engineering - Goel Institute Of Technology & Management , Lucknow</li>
-            </ul>
-            <h3>Experience</h3>
-            <ul>
-                <li class="center">Freshers - Student(3rd Year)</li>
-            </ul>
-            <h3>Skills</h3>
-            <ul class="skills">
-                <li class="circle">HTML</li>
-                <li class="circle">CSS</li>
-                <li class="circle">Javascript</li>
-                <li class="circle">Python</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="#" class="form" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-               <label for="message">Message:</label>
-               <textarea id="message" name="message" required></textarea>
+            <div class="search_chat">
+                <div>
+                    <input type="text"   placeholder="Search or start new chat">
+                    <i class="fa-solid fa-magnifying-glass"></i>  
+                </div>
             </div>
 
-            <input  class="btn" type="submit" value="Send">
-        </form>
-    </section>
+            <div class="chat_area">
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="Images/img 1.jpg" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Ruchi</h4>
+                            <p class="time">11:20</p>
+                        </div>
+                        <div class="message_p">
+                            <p>How are you...?</p>
+                            <b>2</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block active">
+                    <div class="imgbox">
+                        <img src="Images/img 2.jpg" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Alpita</h4>
+                            <p class="time">12:20</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Where are you...?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block active">
+                    <div class="imgbox">
+                        <img src="Images/img 3.jpg" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Dipti</h4>
+                            <p class="time">1:20</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Heyy...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="Images/img 5.jpg" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Anu</h4>
+                            <p class="time">Yestday</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Hello guyss!</p>
+                            <b>1</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="Images/img 4.avif" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Rohan</h4>
+                            <p class="time">Yestday</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Hiii....</p>
+                            <b>1</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="Images/img 6.jpg" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Harshit</h4>
+                            <p class="time">17/09/23</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Hii</p>
+                            <b>3</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block active">
+                    <div class="imgbox">
+                        <img src="Images/img 7.jpg" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Shubham</h4>
+                            <p class="time">16/09/23</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Didi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="Images/img 8.webp" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Shreya</h4>
+                            <p class="time">15/09/23</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Nice</p>
+                            <b>1</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block active">
+                    <div class="imgbox">
+                        <img src="Images/img 9.jpg" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Nehmat</h4>
+                            <p class="time">14/09/23</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Hello..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="Images/img 10.jpg" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Harry</h4>
+                            <p class="time">14/09/23</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Thanks..</p>
+                            <b>2</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="rightSide">
+            <div class="header">
+                <div class="imgText">
+                    <div class="userimage">
+                        <img src="Images/img 7.jpg" alt="" class="cover">
+                    </div>
+                    <h4>Shubham<br><span>online</span></h4>
+                </div>
+                <ul class="nav_icons">
+                    <li><i class="fa-solid fa-video"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
+            </div>
+
+            <div class="chatbox">
+                <div class="message left">
+                    <p>Didi <br> <span>16/08/23</span></p>
+                </div>
+                <div class="message right">
+                    <p>Ha bolo..<br><span>16/08/23</span></p>
+                </div>
+            </div>
+
+            <div class="message-form">
+                <i class="fa-regular fa-face-laugh-beam"></i>
+                <i class="fa-solid fa-plus"></i>
+                <form action="#" id="send-container">
+                    <input type="text" name="messageInp" id="messageInp" placeholder="Type a Message ">
+                    <i class="fa-solid fa-microphone"></i>
+                    <button  class="btn" type="submit">Send</button>
+                </form>   
+            </div>
+        </div>    
+    </div>
+    <!-- Javascript -->
     
-    <footer>
-        <p>&copy;2023 Portfolio Website. All rights reserved</p>
-    </footer>
-
-    <!-- Javascript link -->
-    <script src="main.js"></script>
+    <script  defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script  defer src="main.js"></script>
 </body>
 </html>
