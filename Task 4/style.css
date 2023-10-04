@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Mooli&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+}
+body{
+    font-size: 22px;
+    background-color: #cecaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.age{
+    width: 600px;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 5px 10px 15px; 
+    background-color: #c07489;
+}
+.age label{
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px;
+    font: weight 300px; 
+}
+.age input{
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #120546;
+    font-size: 18px;
+    border-radius: 8px;
+}
+button{
+    background: #355c7d; 
+    color: black;
+    border-radius: 5px; 
+    width: 200px; 
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 10px 15px; 
+    font-size: 1.3rem; 
+    border: 1px solid #333;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+#result{
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px  ;
+}
