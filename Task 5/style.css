@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Mooli&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+}
+#intro img{
+    border-radius: 10px;
+    box-shadow: 10px 15px 20px #aaa;
+}
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}  
+h1{
+    margin: 0;
+}  
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #c06c84;
+    border: 2px solid #333;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15);
+}  
+section{
+    margin-bottom: 40px;
+}   
+img{
+    max-width: 100%;
+}  
+#intro p{
+    margin-top: 20px;
+    padding: 10px;
+}  
+#early-life h2,
+#boxing-career h2,
+#retirement h2,
+#tribute h2{
+    margin-top: 0;
+    padding: 10px;
+    
+}  
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}  
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #ccc;
+}
